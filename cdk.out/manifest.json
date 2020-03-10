@@ -1,0 +1,901 @@
+{
+  "version": "1.21.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LoadBalancerStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LoadBalancerStack.template.json"
+      },
+      "metadata": {
+        "/LoadBalancerStack/DemoVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPC2409DB3F",
+            "trace": [
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:266:25)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet1SubnetB6592B34",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:547:24)",
+              "new PublicSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:697:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet1RouteTable833A1DC8",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:562:23)",
+              "new PublicSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:697:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet1RouteTableAssociationC64BEC15",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:567:9)",
+              "new PublicSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:697:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet1DefaultRoute22933307",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:587:23)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:297:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:296:32)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet1EIPFF4AD3A2",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:708:27)",
+              "NatGateway.configureNat (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:434:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:302:22)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet1NATGateway301A7B38",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:706:21)",
+              "NatGateway.configureNat (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:434:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:302:22)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet2Subnet980625E0",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:547:24)",
+              "new PublicSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:697:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet2RouteTableA55BFCCD",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:562:23)",
+              "new PublicSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:697:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet2RouteTableAssociationE7A0B7A1",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:567:9)",
+              "new PublicSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:697:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet2DefaultRoute30D76A52",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:587:23)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:297:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:296:32)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet2EIP03E095AC",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:708:27)",
+              "NatGateway.configureNat (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:434:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:302:22)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPublicSubnet2NATGatewayA2C150AC",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:706:21)",
+              "NatGateway.configureNat (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:434:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:302:22)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPrivateSubnet1Subnet577398CC",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:547:24)",
+              "new PrivateSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:724:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:481:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPrivateSubnet1RouteTable12D271CE",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:562:23)",
+              "new PrivateSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:724:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:481:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPrivateSubnet1RouteTableAssociationFD4C440A",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:567:9)",
+              "new PrivateSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:724:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:481:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPrivateSubnet1DefaultRouteA9EB711D",
+            "trace": [
+              "PrivateSubnet.addRoute (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:628:23)",
+              "NatGateway.configureSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/nat.js:63:16)",
+              "NatGateway.configureNat (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/nat.js:57:18)",
+              "Vpc.createNatGateways (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:434:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:302:22)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPrivateSubnet2SubnetBF71F3B1",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:547:24)",
+              "new PrivateSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:724:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:481:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPrivateSubnet2RouteTable700990FB",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:562:23)",
+              "new PrivateSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:724:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:481:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPrivateSubnet2RouteTableAssociationB6F32155",
+            "trace": [
+              "new Subnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:567:9)",
+              "new PrivateSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:724:9)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:481:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:460:32)",
+              "Vpc.createSubnets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:456:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:286:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCPrivateSubnet2DefaultRoute92C2830D",
+            "trace": [
+              "PrivateSubnet.addRoute (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:628:23)",
+              "NatGateway.configureSubnet (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/nat.js:63:16)",
+              "NatGateway.configureNat (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/nat.js:57:18)",
+              "Vpc.createNatGateways (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:434:18)",
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:302:22)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCIGWD7695CC8",
+            "trace": [
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:290:25)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/DemoVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoVPCVPCGW5132360C",
+            "trace": [
+              "new Vpc (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:292:25)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Blue/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGBlueInstanceSecurityGroup69CAB15D",
+            "trace": [
+              "new SecurityGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:173:30)",
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:124:30)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Blue/InstanceSecurityGroup/from LoadBalancerStackLBSecurityGroupB71A4BA8:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGBlueInstanceSecurityGroupfromLoadBalancerStackLBSecurityGroupB71A4BA880C21125CE",
+            "trace": [
+              "SecurityGroup.addIngressRule (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:33:13)",
+              "SecurityGroup.addIngressRule (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:223:19)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:89:31",
+              "ReactiveList.forEachAndForever (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:88:51",
+              "ReactiveList.forEachAndForever (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "Connections.allowFrom (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:87:30)",
+              "ApplicationListener.registerConnectable (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:212:33)",
+              "ApplicationTargetGroup.registerListener (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:87:22)",
+              "ApplicationListener.addDefaultTargetGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:229:21)",
+              "ApplicationListener.addTargetGroups (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:112:22)",
+              "ApplicationListener.addTargets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:143:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:51",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:25",
+              "Kernel._ensureSync (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8274:20)",
+              "Kernel.invoke (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7664:26)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Blue/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGBlueInstanceRoleE148582E",
+            "trace": [
+              "new Role (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-iam/lib/role.js:36:22)",
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:131:35)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Blue/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGBlueInstanceProfile1AD78044",
+            "trace": [
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:136:28)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Blue/LaunchConfig": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGBlueLaunchConfig9A9C72A3",
+            "trace": [
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:144:30)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Blue/ASG": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGBlueASG5B13DC1A",
+            "trace": [
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:215:33)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Blue/ScalingPolicyAModestLoad/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGBlueScalingPolicyAModestLoad3CB1FE8A",
+            "trace": [
+              "new TargetTrackingScalingPolicy (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/target-tracking-scaling-policy.js:17:25)",
+              "AutoScalingGroup.scaleOnRequestCount (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:80:24)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:51",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:25",
+              "Kernel._ensureSync (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8274:20)",
+              "Kernel.invoke (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7664:26)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn2-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ssm/lib/parameter.js:104:15)",
+              "Function.valueForTypedStringParameter (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ssm/lib/parameter.js:171:21)",
+              "AmazonLinuxImage.getImage (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/machine-image.js:64:41)",
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:140:48)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Green/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGGreenInstanceSecurityGroup652485A8",
+            "trace": [
+              "new SecurityGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:173:30)",
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:124:30)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Green/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGGreenInstanceRoleB9A77BE1",
+            "trace": [
+              "new Role (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-iam/lib/role.js:36:22)",
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:131:35)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Green/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGGreenInstanceProfile0DE96C54",
+            "trace": [
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:136:28)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Green/LaunchConfig": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGGreenLaunchConfig46323EE1",
+            "trace": [
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:144:30)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/ASG-Green/ASG": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGGreenASG8B5DDD5F",
+            "trace": [
+              "new AutoScalingGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:215:33)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LB8A12904C",
+            "trace": [
+              "new BaseLoadBalancer (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.js:23:26)",
+              "new ApplicationLoadBalancer (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:16:9)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBSecurityGroup8A41EA2B",
+            "trace": [
+              "new SecurityGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:173:30)",
+              "new ApplicationLoadBalancer (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:21:53)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/LB/SecurityGroup/to LoadBalancerStackASGBlueInstanceSecurityGroupA7D8941D:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBSecurityGrouptoLoadBalancerStackASGBlueInstanceSecurityGroupA7D8941D804C82EB16",
+            "trace": [
+              "SecurityGroup.addEgressRule (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:48:13)",
+              "SecurityGroup.addEgressRule (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:249:19)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:66:31",
+              "ReactiveList.forEachAndForever (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:65:51",
+              "ReactiveList.forEachAndForever (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "Connections.allowTo (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:64:30)",
+              "Connections.allowFrom (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-ec2/lib/connections.js:95:31)",
+              "ApplicationListener.registerConnectable (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:212:33)",
+              "ApplicationTargetGroup.registerListener (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:87:22)",
+              "ApplicationListener.addDefaultTargetGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:229:21)",
+              "ApplicationListener.addTargetGroups (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:112:22)",
+              "ApplicationListener.addTargets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:143:14)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:51",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:25",
+              "Kernel._ensureSync (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8274:20)",
+              "Kernel.invoke (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7664:26)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/LB/Listener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBListener49E825B4",
+            "trace": [
+              "new BaseListener (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:12:26)",
+              "new ApplicationListener (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:23:9)",
+              "ApplicationLoadBalancer.addListener (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:67:16)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:51",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:25",
+              "Kernel._ensureSync (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8274:20)",
+              "Kernel.invoke (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7664:26)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/LB/Listener/TargetGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBListenerTargetGroupF04FCF6D",
+            "trace": [
+              "new TargetGroupBase (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:31:25)",
+              "new ApplicationTargetGroup (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:15:9)",
+              "ApplicationListener.addTargets (/private/var/folders/0t/jsxrjn092cjcy01hr9td1k_h3_77q2/T/jsii-kernel-jmT6z3/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:132:23)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:51",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7665:25",
+              "Kernel._ensureSync (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8274:20)",
+              "Kernel.invoke (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7664:26)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/LoadBalancerStack/LoadBalancer": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoadBalancer",
+            "trace": [
+              "/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8298:20)",
+              "Kernel._create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7838:26)",
+              "Kernel.create (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7372:28)",
+              "KernelHost.run (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (/Users/koleary/.pyenv/versions/3.7.2/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.26.0",
+      "@aws-cdk/core": "1.26.0",
+      "@aws-cdk/region-info": "1.22.0",
+      "@aws-cdk/aws-iam": "1.22.0",
+      "@aws-cdk/aws-autoscaling-common": "1.22.0",
+      "@aws-cdk/aws-cloudwatch": "1.22.0",
+      "@aws-cdk/aws-kms": "1.22.0",
+      "@aws-cdk/aws-ssm": "1.22.0",
+      "@aws-cdk/aws-ec2": "1.22.0",
+      "@aws-cdk/aws-elasticloadbalancing": "1.22.0",
+      "@aws-cdk/aws-events": "1.25.0",
+      "@aws-cdk/aws-logs": "1.25.0",
+      "@aws-cdk/aws-s3": "1.25.0",
+      "@aws-cdk/assets": "1.25.0",
+      "@aws-cdk/aws-s3-assets": "1.25.0",
+      "@aws-cdk/aws-sqs": "1.25.0",
+      "@aws-cdk/aws-lambda": "1.25.0",
+      "@aws-cdk/aws-sns": "1.22.0",
+      "@aws-cdk/aws-cloudformation": "1.22.0",
+      "@aws-cdk/aws-route53": "1.22.0",
+      "@aws-cdk/aws-certificatemanager": "1.22.0",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.22.0",
+      "@aws-cdk/aws-autoscaling": "1.22.0",
+      "jsii-runtime": "Python/3.7.2"
+    }
+  }
+}
